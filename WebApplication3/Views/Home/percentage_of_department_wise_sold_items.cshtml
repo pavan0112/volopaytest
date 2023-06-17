@@ -1,0 +1,25 @@
+﻿@model IEnumerable<WebApplication3.Models.Modelclasses.perc>
+@{ 
+    int r = 1;
+}
+<table>
+    <thead>
+        <tr>
+            <td>index</td>
+            <td>department</td>
+            <td>seats</td>
+            <td>percentage</td>
+        </tr>
+    </thead>
+    @foreach (var t in Model)
+    {
+        <tr>
+            <td>@(r++)</td>
+            <td>@t.department</td>
+
+            <td>  </td>
+            <td>@t.seats</td>
+            <td>@t.percentage</td>
+        </tr>
+    }
+</table>
